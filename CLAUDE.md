@@ -3,15 +3,15 @@
 This is the working logbook of **{{NAME}}**, {{ROLE}}{{AT_COMPANY}}, leading
 {{TEAM_OR_PROJECT}}.
 
-> Fill the `{{PLACEHOLDERS}}` once — see `docs/customize.md`. Everything below is
-> generic and applies to any lead's logbook.
+> Fill the placeholders (`{{...}}`) once — see `docs/customize.md`. Everything
+> below is generic and applies to any lead's logbook.
 
 ## Role context
 
 - **Team:** {{TEAM_DESCRIPTION}} (e.g. ~N engineers)
 - **Manager:** {{MANAGER}}
 - **Main project:** {{MAIN_PROJECT}}
-- **Notes:** {{ANY_STANDING_CONTEXT — e.g. ramp period, focus of the quarter}}
+- **Notes:** {{ANY_STANDING_CONTEXT}} <!-- e.g. ramp period, focus of the quarter -->
 
 ## File structure
 
@@ -141,7 +141,7 @@ Each `team/<name>.md` is a **dossier**, not a 1:1 log. Structure:
 - **Cross-layer:** developing a person is a lead's job and produces **your own
   evidence** — when a report grows, it's a candidate for `growth/evidence.md`.
 
-Use `templates/team/TEMPLATE.md` as the starting point.
+Use `team/TEMPLATE.md` as the starting point.
 
 ---
 

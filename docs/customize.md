@@ -12,6 +12,7 @@ in the framework. Copy in:
 - `.claude/` (skills + `settings.local.json.example` → `settings.local.json`)
 - the **contents** of `templates/` (not the `templates/` folder itself):
   `tasks.md`, `projects/`, `prep/`, `archive/`, `team/`, `growth/`
+- `docs/` (optional — handy in-logbook reference; its paths are logbook-relative)
 
 Rename the `*.template.md` files to drop `.template` (e.g.
 `growth/evidence.template.md` → `growth/evidence.md`).

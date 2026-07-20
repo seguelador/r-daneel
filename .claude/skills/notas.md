@@ -56,8 +56,8 @@ Process all the notes and:
 2. **Save the entry** in `team/<ldap-or-name>.md`:
    - If the file exists, add the new session at the top of the `## Bitácora`
      section (respecting the dossier format).
-   - If it doesn't exist, create it from `templates/team/TEMPLATE.md` and fill
-     what you can (at least the header + a stub "Who they are").
+   - If it doesn't exist, create it from `team/TEMPLATE.md` and fill what you can
+     (at least the header + a stub "Who they are").
 
 3. **Show the preview** of what you saved — the full, well-formatted entry.
 

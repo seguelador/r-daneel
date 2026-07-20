@@ -10,8 +10,8 @@ You are running `/prep` for a 1:1 with `<person>`.
 
 ### 1. Load the dossier
 Open `team/<person>.md`. If it doesn't exist, offer to create a stub from
-`templates/team/TEMPLATE.md` and prep from whatever context you can find (other
-files, recent notes).
+`team/TEMPLATE.md` and prep from whatever context you can find (other files,
+recent notes).
 
 ### 2. Summarize the state
 Present a tight briefing:

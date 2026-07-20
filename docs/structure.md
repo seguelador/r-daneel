@@ -15,7 +15,8 @@ a prioritization pass (blocking vs. can-wait).
 Three concepts, nested only as far as the work justifies:
 
 - **Track** = a file. A unit of work with its own context, decisions, data, next
-  steps. Use `templates/projects/_track.template.md`.
+  steps. Start from the track template (`projects/_track.md`, from
+  `templates/projects/` in the framework).
 - **Epic** = a folder with an `_overview.md` (index + status, **not** a content
   dump) and one file per track.
 - **Area** = a large domain. A folder with an `_overview.md`, a `_reference.md`
@@ -34,7 +35,7 @@ Rules:
 
 ## `team/` — the people CRM
 
-One **dossier** per person (`templates/team/TEMPLATE.md`). Flat folder; model the
+One **dossier** per person (`team/TEMPLATE.md`). Flat folder; model the
 type with the **Relationship** field (report | manager | peer | expert |
 stakeholder) rather than subfolders.
 
