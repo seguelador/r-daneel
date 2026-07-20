@@ -5,6 +5,27 @@ This is the working logbook of **{{NAME}}**, {{ROLE}}{{AT_COMPANY}}, leading
 
 > Fill the placeholders (`{{...}}`) once — see `docs/customize.md`. Everything
 > below is generic and applies to any lead's logbook.
+>
+> **Single-folder model:** if a `CLAUDE.local.md` exists next to this file, it
+> holds this instance's real context (name, role, company specifics) and is
+> gitignored. In that case leave the `{{placeholders}}` below as-is — the local
+> file overrides them. See `CONTRIBUTING.md`.
+
+## Framework vs. instance — guardrail
+
+This repo is **both** the shareable framework and (in the single-folder model)
+your live logbook. Two kinds of files:
+
+- **Framework (tracked, shared):** `CLAUDE.md`, `.claude/skills/*`, `docs/*`,
+  `templates/*`, `modules/*`, `README.md`, `CONTRIBUTING.md`, `LICENSE`,
+  `.gitignore`.
+- **Instance (gitignored, private):** `CLAUDE.local.md`, `tasks.md`, `projects/`,
+  `team/`, `growth/`, `prep/`, `archive/`, `.claude/settings.local.json`.
+
+**During a normal logbook session, write ONLY instance files.** Changing a
+framework file is a deliberate *framework change* — do it on a branch as a
+contribution, never as a side effect of daily use. If a logbook action seems to
+require editing a framework file, stop and flag it. See `CONTRIBUTING.md`.
 
 ## Role context
 

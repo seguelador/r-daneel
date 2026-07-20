@@ -1,9 +1,24 @@
 # Customize Daneel to you
 
 This is manual for now (an onboarding wizard is on the roadmap). Fifteen minutes
-and you're running.
+and you're running. First pick a model (see `CONTRIBUTING.md` for the details):
 
-## 1. Create your own logbook folder
+- **Single-folder (recommended):** this repo *is* your logbook. Your private
+  content and a gitignored `CLAUDE.local.md` live here but are never committed.
+  Skip step 1 — you're already in the folder. Do steps 2–5, but put your personal
+  context in `CLAUDE.local.md` instead of editing the tracked `CLAUDE.md`, and
+  fill the content dirs (`team/`, `growth/`, …) in place.
+- **Two-folder:** keep this repo pristine and run your logbook from a separate
+  copy. Follow steps 1–5 as written.
+
+### Seeding from an existing logbook
+If you already have context you don't want to lose, the "onboarding" is a one-time
+seed: copy your existing `team/`, `projects/`, `growth/`, `tasks.md`, `archive/`
+into the content dirs, and distill your personal context into `CLAUDE.local.md`
+(single-folder) or the copied `CLAUDE.md` (two-folder). If your Claude Code memory
+lived under a different project path, copy its `memory/` across too.
+
+## 1. Create your own logbook folder (two-folder model)
 
 Keep it **separate** from this framework repo — your real content shouldn't live
 in the framework. Copy in:

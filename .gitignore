@@ -1,14 +1,17 @@
 # Local Claude Code settings (per-machine, may contain paths/permissions)
 .claude/settings.local.json
 
+# Personal instance context (single-folder model — never committed to the framework)
+CLAUDE.local.md
+
 # OS noise
 .DS_Store
 Thumbs.db
 
-# Your personal logbook content should NOT live in the framework repo.
-# The framework ships empty templates; your real content lives in your own
-# private instance (a separate folder/repo). If you ever fill these in here
-# for testing, ignore them:
+# Your private logbook content. In the single-folder model this repo is BOTH the
+# framework and your live instance — your real content lives here but is NEVER
+# committed. In the two-folder model it lives in a separate instance. Either way
+# it stays out of the shareable framework:
 /tasks.md
 /projects/
 /team/
