@@ -1,0 +1,12 @@
+{
+  "//": "Copy this to .claude/settings.local.json in your own logbook and adjust.",
+  "//permissions": "Pre-allow the read-only commands you use often to reduce prompts.",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write"
+    ],
+    "deny": []
+  }
+}

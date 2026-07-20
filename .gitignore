@@ -1,0 +1,18 @@
+# Local Claude Code settings (per-machine, may contain paths/permissions)
+.claude/settings.local.json
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Your personal logbook content should NOT live in the framework repo.
+# The framework ships empty templates; your real content lives in your own
+# private instance (a separate folder/repo). If you ever fill these in here
+# for testing, ignore them:
+/tasks.md
+/projects/
+/team/
+/growth/
+/prep/
+/archive/
+!templates/**
