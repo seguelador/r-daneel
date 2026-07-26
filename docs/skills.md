@@ -12,6 +12,7 @@ trigger. Everything else is just behavior described in `CLAUDE.md`.
 | Continuous | Think / work a problem | *(default mode — no skill)* |
 | Per 1:1 | Prep a 1:1 | `/prep <person>` |
 | Daily | Debrief the day | `/catchup` |
+| Weekly | Zoom out & distill the week | `/weekly` |
 | Ad-hoc | Status update | `/status-update` |
 | Yearly | Prep a performance review | `/review-prep` |
 
@@ -31,6 +32,11 @@ These two are easy to confuse. They are different:
 So: `catchup` is a front end that *uses* `sync`. If you just want to file, run
 `sync`. If you want to reflect on the day and then file, run `catchup`.
 
+`/weekly` is the **weekly** analog of `/catchup`: it also delegates filing to
+`/sync`, but zooms out to distill the week and do hygiene, rather than debrief a
+single day. It saves a digest to `weekly.md` and is nudged automatically once a
+week has passed since the last one.
+
 ## The four newer gestures
 
 - **`/prep <person>`** — loads the person's dossier, surfaces open threads and
@@ -40,12 +46,11 @@ So: `catchup` is a front end that *uses* `sync`. If you just want to file, run
   objective and by framework dimension, ready for your manager. The payoff of a
   year of evidence capture.
 - **`/braindump`** — zero-friction capture into `prep/inbox.md`; routed later.
-- **`/status-update`** — drafts a status update from the logbook (what moved,
+- **`/status-update`** — drafts a status update from the Daneel (what moved,
   blockers, next), tuned to the audience.
 
 ## Deferred (on the roadmap)
 
-- **`/weekly`** — a zoom-out weekly review (may end up a mode of `/catchup`).
 - **`/ceremony <type>`** — prep for formal ceremonies (MBR/QBR/planning/retro).
   More company-specific; a candidate for a company module.
 

@@ -3,7 +3,7 @@ description: End-of-day ritual. Guides the user through capturing what happened,
 ---
 
 You are running `/catchup`. The user just finished a day of work and wants to
-process what happened and keep the logbook current.
+process what happened and keep the Daneel current.
 
 This skill is the **conversational front end**. It does the talking and
 extraction. When it comes to actually filing things into the right places, it
@@ -50,4 +50,4 @@ End with a 3-line summary:
 - One line on how the day was (optional — only if the user brings it up)
 
 Don't over-structure. The goal is that the user leaves the terminal with a clear
-head and a current logbook.
+head and a current Daneel.

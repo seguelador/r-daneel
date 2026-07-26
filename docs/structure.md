@@ -1,6 +1,6 @@
 # Structure & conventions
 
-The logbook is a set of layers. Each has one job. This doc is the source of truth
+Daneel is a set of layers. Each has one job. This doc is the source of truth
 for "where does X go".
 
 ## `tasks.md` — the index
@@ -55,6 +55,23 @@ Four files, separate concerns:
 - `evidence.md` — the brag document: concrete impact tagged to
   objectives/dimensions. The review currency.
 - `principles.md` — principles and learnings (judgment).
+
+## `reference.md` — durable knowledge (Resources)
+
+The PARA "Resources" bucket: durable, topic-based knowledge **not** tied to a
+project, person, or growth — "how X works" that you'd read, not just recall.
+Start as a single root file; promote a topic to its own file (or a `reference/`
+folder) when it earns siblings. Distinct from:
+
+- `projects/<area>/_reference.md` — architecture/glossary of *that* area.
+- Claude Code memory — small atomic cross-session facts (contacts, URLs, prefs).
+
+## `weekly.md` — weekly digests
+
+The week-over-week record written by `/weekly`: each entry the distilled essence
+of a week (3–5 bullets, not a log). Durable detail is routed to tracks/team/growth;
+this is the scannable narrative, the marker the session-open nudge reads, and raw
+material for `/review-prep`.
 
 ## `prep/` — ephemeral
 

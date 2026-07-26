@@ -3,22 +3,22 @@
 This is manual for now (an onboarding wizard is on the roadmap). Fifteen minutes
 and you're running. First pick a model (see `CONTRIBUTING.md` for the details):
 
-- **Single-folder (recommended):** this repo *is* your logbook. Your private
+- **Single-folder (recommended):** this repo *is* your Daneel. Your private
   content and a gitignored `CLAUDE.local.md` live here but are never committed.
   Skip step 1 — you're already in the folder. Do steps 2–5, but put your personal
   context in `CLAUDE.local.md` instead of editing the tracked `CLAUDE.md`, and
   fill the content dirs (`team/`, `growth/`, …) in place.
-- **Two-folder:** keep this repo pristine and run your logbook from a separate
+- **Two-folder:** keep this repo pristine and run your Daneel from a separate
   copy. Follow steps 1–5 as written.
 
-### Seeding from an existing logbook
+### Seeding from an existing Daneel
 If you already have context you don't want to lose, the "onboarding" is a one-time
 seed: copy your existing `team/`, `projects/`, `growth/`, `tasks.md`, `archive/`
 into the content dirs, and distill your personal context into `CLAUDE.local.md`
 (single-folder) or the copied `CLAUDE.md` (two-folder). If your Claude Code memory
 lived under a different project path, copy its `memory/` across too.
 
-## 1. Create your own logbook folder (two-folder model)
+## 1. Create your own Daneel folder (two-folder model)
 
 Keep it **separate** from this framework repo — your real content shouldn't live
 in the framework. Copy in:
@@ -26,8 +26,9 @@ in the framework. Copy in:
 - `CLAUDE.md`
 - `.claude/` (skills + `settings.local.json.example` → `settings.local.json`)
 - the **contents** of `templates/` (not the `templates/` folder itself):
-  `tasks.md`, `projects/`, `prep/`, `archive/`, `team/`, `growth/`
-- `docs/` (optional — handy in-logbook reference; its paths are logbook-relative)
+  `tasks.md`, `reference.md`, `weekly.md`, `projects/`, `prep/`, `archive/`,
+  `team/`, `growth/`
+- `docs/` (optional — handy in-Daneel reference; its paths are Daneel-relative)
 
 Rename the `*.template.md` files to drop `.template` (e.g.
 `growth/evidence.template.md` → `growth/evidence.md`).
@@ -75,7 +76,7 @@ they'll mature.
 
 ## 5. First session
 
-Open Claude Code in your logbook folder and just talk. Drop some meeting notes,
+Open Claude Code in your Daneel folder and just talk. Drop some meeting notes,
 ask "what's open?", or run `/catchup` at the end of a day. Daneel will propose
 where things go — you confirm.
 

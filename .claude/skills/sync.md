@@ -1,9 +1,9 @@
 ---
-description: Routes this session's context to the right logbook files (tasks, projects/epics/tracks, team, growth, memory). Use any time — not only at close — when the user says "sync", "route this", "save the context where it belongs", or before closing a session with uncaptured material. Unlike /catchup (a conversational end-of-day debrief), /sync is the routing mechanic: it looks at what happened and files it tidily.
+description: Routes this session's context to the right Daneel files (tasks, projects/epics/tracks, team, growth, memory). Use any time — not only at close — when the user says "sync", "route this", "save the context where it belongs", or before closing a session with uncaptured material. Unlike /catchup (a conversational end-of-day debrief), /sync is the routing mechanic: it looks at what happened and files it tidily.
 ---
 
 You are running `/sync`. Goal: take what happened in **this session** and
-propagate it to the correct logbook files, following the project structure. This
+propagate it to the correct Daneel files, following the project structure. This
 is not a conversational debrief — it's routing and orderly persistence.
 
 ## Where each thing goes
@@ -68,5 +68,5 @@ latest `team/` session: if something new is misaligned or connects to the
 objectives, mention it — unprompted.
 
 ## Tone
-Direct, orderly. Propose destinations, don't dump. The goal is a tidy logbook
+Direct, orderly. Propose destinations, don't dump. The goal is a tidy Daneel
 where nothing valuable is lost.

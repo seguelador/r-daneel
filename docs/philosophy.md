@@ -10,7 +10,8 @@ your head, in scattered docs, and in Slack scrollback. It decays.
 
 ## The idea
 
-Daneel is a **logbook operated by Claude Code**. It's plain Markdown you own, in
+Daneel is a **companion operated by Claude Code that keeps a second brain for
+you**. It's plain Markdown you own, in
 a folder. Claude reads that folder, understands its structure, and writes back
 into it following a set of conventions. You talk; it captures, routes, and gives
 things back.
@@ -22,7 +23,7 @@ Three principles:
 2. **Structure that routes.** Every kind of thing has a home (a task, a track, a
    person, a learning, a piece of evidence). Capture is cheap because routing is
    defined. The layers are an index over your work, not a pile.
-3. **Brain-first and proactive, but low-noise.** Daneel consults the logbook
+3. **Brain-first and proactive, but low-noise.** Daneel consults the Daneel
    before answering, and surfaces high-value connections unprompted (a
    misalignment with your objectives, a candidate for your evidence ledger) —
    but the bar to interrupt is high. If there's nothing, it says nothing.
@@ -32,7 +33,7 @@ Three principles:
 The value isn't any single note — it's what accumulates. A `team/` that becomes a
 real CRM of your people. A `growth/evidence.md` that, by December, is a curated
 case for your review instead of a panicked reconstruction. Principles that make
-your judgment legible to yourself over time. The logbook gets more useful the
+your judgment legible to yourself over time. The Daneel gets more useful the
 longer you run it.
 
 ## What it's not

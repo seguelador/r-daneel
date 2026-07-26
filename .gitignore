@@ -8,7 +8,7 @@ CLAUDE.local.md
 .DS_Store
 Thumbs.db
 
-# Your private logbook content. In the single-folder model this repo is BOTH the
+# Your private second-brain content. In the single-folder model this repo is BOTH the
 # framework and your live instance — your real content lives here but is NEVER
 # committed. In the two-folder model it lives in a separate instance. Either way
 # it stays out of the shareable framework:
@@ -18,4 +18,6 @@ Thumbs.db
 /growth/
 /prep/
 /archive/
+/reference.md
+/weekly.md
 !templates/**

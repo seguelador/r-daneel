@@ -1,16 +1,16 @@
 # Contributing & maintenance
 
-Daneel is **both** a shareable framework and, for most users, their live logbook.
+Daneel is **both** a shareable framework and, for most users, their live Daneel.
 Keeping those two roles clean is the whole game. This doc explains the model, what
 you may and may not touch, and how to contribute improvements.
 
 ## Two ways to run it
 
-- **Single-folder (recommended):** this repo *is* your logbook. Framework files
+- **Single-folder (recommended):** this repo *is* your Daneel. Framework files
   are tracked; your private content is gitignored; your personal context lives in
   a gitignored `CLAUDE.local.md`. You "live" the framework and contribute back
   in place.
-- **Two-folder:** keep this repo pristine as the framework, and run your logbook
+- **Two-folder:** keep this repo pristine as the framework, and run your Daneel
   from a separate copy. More separation, but you sync improvements by hand.
 
 Either way, the rule below holds.
@@ -31,13 +31,13 @@ never seen by git, so they can never be committed to the framework.
 
 ## Guardrails (for you and for Daneel)
 
-1. **During a normal logbook session, only instance files get written.** Capturing
+1. **During a normal Daneel session, only instance files get written.** Capturing
    a meeting, prepping a 1:1, routing context — all of that touches
    `team/`, `projects/`, `growth/`, `tasks.md`, etc. Never framework files.
 2. **Changing a framework file is a deliberate act.** Improving a skill, a doc, a
    template, the generic `CLAUDE.md`, or a module is a *framework change* — do it
    on a branch (see below), not as a side effect of daily use.
-3. **If a logbook action seems to need a framework edit, stop and flag it.** It's
+3. **If a Daneel action seems to need a framework edit, stop and flag it.** It's
    usually a sign the change belongs in `CLAUDE.local.md` (personal) or is
    actually a framework improvement to do deliberately.
 4. **Never `git add -f` your private content.** If `git status` ever shows
