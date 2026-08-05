@@ -11,7 +11,7 @@ Thumbs.db
 # Local tooling (user-specific, not part of the framework)
 .betterman/
 
-# Company modules live in their own repos and are gitignored here
+# Modules live in their own repos and are gitignored here
 /modules/*/
 !/modules/README.md
 

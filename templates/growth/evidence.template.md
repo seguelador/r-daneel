@@ -2,7 +2,8 @@
 
 > A running ledger of concrete evidence of your growth and impact, each item
 > tagged to an objective or a growth-framework dimension. This is what you bring
-> to a performance review (compile it with `/review-prep`).
+> to a performance review — or what becomes your own case for a raise, a rate
+> increase, or a new kind of work (compile it with `/review-prep`).
 >
 > Inspired by Julia Evans' "brag document". Capture continuously — a specific
 > win recalled at review time beats a vague memory. Daneel proposes candidates as
@@ -17,5 +18,5 @@
 
 ---
 
-<!-- Newest at the top. Developing your people counts: when a report grows, that's
-your evidence too. -->
+<!-- Newest at the top. Developing people counts: when someone you've invested in
+grows, that's your evidence too. -->
