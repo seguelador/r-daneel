@@ -1,4 +1,5 @@
 ---
+name: catchup
 description: End-of-day ritual. Guides the user through capturing what happened, updating tasks, and ending the day with clarity. Use after any significant day. A conversational debrief — for the tidy filing itself it hands off to /sync.
 ---
 

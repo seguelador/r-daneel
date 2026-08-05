@@ -1,4 +1,5 @@
 ---
+name: prep
 description: 1:1 prep. Loads a person's dossier, surfaces open threads and the "Para el próximo 1:1" buffer, and proposes an agenda. Triggers: /prep <person>, "prep my 1:1 with", "get ready for the 1:1".
 ---
 

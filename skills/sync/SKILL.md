@@ -1,4 +1,5 @@
 ---
+name: sync
 description: Routes this session's context to the right Daneel files (tasks, projects/epics/tracks, team, growth, memory). Use any time — not only at close — when the user says "sync", "route this", "save the context where it belongs", or before closing a session with uncaptured material. Unlike /catchup (a conversational end-of-day debrief), /sync is the routing mechanic: it looks at what happened and files it tidily.
 ---
 

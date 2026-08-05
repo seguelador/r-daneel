@@ -1,4 +1,5 @@
 ---
+name: braindump
 description: Low-friction capture. Drop a raw thought and it lands in an inbox to be routed later — no structure required in the moment. Triggers: /braindump, "quick note", "dump this", "don't lose this".
 ---
 

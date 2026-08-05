@@ -1,4 +1,5 @@
 ---
+name: review-prep
 description: Performance-review prep. Compiles growth/evidence.md into a narrative organized by objective and by growth-framework dimension, ready to bring to a manager. Triggers: /review-prep, "prep my performance review", "build my promo case", "year-end review".
 ---
 

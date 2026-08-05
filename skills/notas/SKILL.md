@@ -1,4 +1,5 @@
 ---
+name: notas
 description: Meeting-notes mode. Capture raw notes during a meeting with minimal friction, then process them into a structured session entry in team/ (or a track). Triggers: /notas, "take notes", "meeting notes".
 ---
 

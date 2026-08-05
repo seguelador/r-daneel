@@ -1,4 +1,5 @@
 ---
+name: weekly
 description: Weekly zoom-out. Distills the week's accumulated notes into a short digest (saved to weekly.md), sweeps hygiene (stale tasks, done items), and surfaces what the daily cadence misses (evidence candidates, drift from objectives). The Distill gesture. Triggers: /weekly, "weekly review", "cierre de semana".
 ---
 

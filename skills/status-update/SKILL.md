@@ -1,4 +1,5 @@
 ---
+name: status-update
 description: Draft a status update for a manager or stakeholders, drawn from the Daneel (what moved, blockers, what's next). Triggers: /status-update, "write a status update", "what do I report", "update for my manager".
 ---
 
