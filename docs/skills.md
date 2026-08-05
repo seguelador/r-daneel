@@ -1,6 +1,6 @@
 # Skills — the gestures
 
-Skills are the recurring gestures of a lead's week. A gesture earns a skill if
+Skills are the recurring gestures of a working week. A gesture earns a skill if
 it's recurring, benefits from consistent structured behavior, and has a clear
 trigger. Everything else is just behavior described in `CLAUDE.md`.
 
@@ -43,8 +43,8 @@ week has passed since the last one.
   the "Para el próximo 1:1" buffer, proposes an agenda. After the meeting, helps
   update the dossier and route action items.
 - **`/review-prep`** — compiles `growth/evidence.md` into a narrative by
-  objective and by framework dimension, ready for your manager. The payoff of a
-  year of evidence capture.
+  objective and by framework dimension, ready for your referente or to stand as
+  your own case. The payoff of a year of evidence capture.
 - **`/braindump`** — zero-friction capture into `prep/inbox.md`; routed later.
 - **`/status-update`** — drafts a status update from the Daneel (what moved,
   blockers, next), tuned to the audience.
@@ -52,9 +52,10 @@ week has passed since the last one.
 ## Deferred (on the roadmap)
 
 - **`/ceremony <type>`** — prep for formal ceremonies (MBR/QBR/planning/retro).
-  More company-specific; a candidate for a company module.
+  Domain-specific; a candidate for a module rather than the core.
 
-## Company skills
+## Module skills
 
-If you enable a company module (e.g. `modules/meli/`), it may add its own skills
-(a change-control generator, a ticket-tracker sync). See the module's README.
+If you enable a module (`modules/<name>/`), it may add its own skills — a
+change-control generator, a ticket-tracker sync, a session-notes format for your
+practice. See the module's README.

@@ -5,12 +5,12 @@
 > evidence against one of these dimensions or a stated objective?"*
 >
 > Two ways to fill this:
-> - **(a) Formal framework** — if your company provides one (a role/experience
->   map, a competency matrix), summarize it here. Map yourself and your team to it.
+> - **(a) Formal framework** — if one exists for you (an employer's role/experience
+>   map or competency matrix, a professional body's standards, a certification or
+>   licensing path), summarize it here. Map yourself and the people you develop to it.
 > - **(b) Self-authored** — if you don't have one, build it from conversation:
->   what are you seeking professionally, toward which role, and what would
->   "operating at the next level" look like? Structure it once and use it as the
->   anchor.
+>   what are you seeking professionally, toward what, and what would "operating at
+>   the next level" look like? Structure it once and use it as the anchor.
 
 ---
 

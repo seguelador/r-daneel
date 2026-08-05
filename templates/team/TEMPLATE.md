@@ -1,6 +1,6 @@
 # <Name> (<ldap>)
 
-**Role / Stage·Path:** <role — maps to growth-framework>  ·  **Relationship:** report | manager | peer | expert | stakeholder  ·  **TZ:** <timezone>  ·  **1:1 cadence:** <e.g. biweekly, or "none yet">
+**Role / Stage·Path:** <role — maps to growth-framework>  ·  **Relationship:** report | manager | referente | peer | expert | stakeholder | client | mentor | collaborator  ·  **TZ:** <timezone>  ·  **1:1 cadence:** <e.g. biweekly, or "none yet">
 
 <!--
 This is a DOSSIER, not a 1:1 log. Separate the stable from the running:

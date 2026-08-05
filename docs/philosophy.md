@@ -2,11 +2,28 @@
 
 ## The problem
 
-A lead's work is mostly **people and decisions**, and almost none of it is
-written down in a way you can get back. What did you agree with someone three
-1:1s ago? What was the rationale for that architecture call? What concrete impact
-did you have this quarter — the stuff you'll need at review time? It lives in
-your head, in scattered docs, and in Slack scrollback. It decays.
+Some work is mostly **people and decisions**, and almost none of it is written
+down in a way you can get back. What did you agree with someone three sessions
+ago? What was the rationale for that call? What concrete impact did you have this
+quarter — the stuff you'll need when you make your case? It lives in your head,
+in scattered docs, and in chat scrollback. It decays.
+
+## Who it's for
+
+Daneel targets a **shape of work**, not a job title: work that accumulates in
+conversations and judgment calls rather than in artifacts, and where the same
+people recur over time.
+
+That shape fits an engineer or a lead at a company — it's where Daneel was built
+— but it fits just as well a consultant with a client roster, a therapist with a
+caseload, a coach or personal trainer, a freelancer with recurring accounts. What
+they share: recurring 1:1s worth remembering, decisions worth their rationale,
+and a professional trajectory nobody else is tracking for them.
+
+Everything domain-specific — a ticketing system, a corporate calendar, a formal
+competency map — lives in an optional **module**. The core stays portable on
+purpose: if the core needed to know your employer, it couldn't serve the
+freelancer, and vice versa.
 
 ## The idea
 
@@ -32,20 +49,21 @@ Three principles:
 
 The value isn't any single note — it's what accumulates. A `team/` that becomes a
 real CRM of your people. A `growth/evidence.md` that, by December, is a curated
-case for your review instead of a panicked reconstruction. Principles that make
+case for your progression instead of a panicked reconstruction. Principles that make
 your judgment legible to yourself over time. The Daneel gets more useful the
 longer you run it.
 
 ## What it's not
 
-Not a task tracker to replace Jira. Not a wiki. Not an autonomous agent that acts
-on the world. It's a **second brain for a lead** — it remembers, connects, and
-prepares, so you can spend your attention on the people and the decisions.
+Not a task tracker to replace your ticketing system. Not a wiki. Not an
+autonomous agent that acts on the world. It's a **second brain** — it remembers,
+connects, and prepares, so you can spend your attention on the people and the
+decisions.
 
 ## Prior art
 
 Daneel is a specific instance of a well-established, fast-moving pattern. It
 borrows deliberately — see Credits in the README (Garry Tan's gstack/gbrain, Cole
 Medin's second-brain-starter, COG, Julia Evans' brag document, Karpathy's LLM
-Wiki). Its one bet is the **niche**: a lead at a large company, where the
-existing tools are thin.
+Wiki). Its one bet is the **niche**: work made of recurring people and
+decisions, where the existing tools are thin.

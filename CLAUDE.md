@@ -1,13 +1,12 @@
 # Daneel — second brain of {{NAME}}
 
-This is the second brain Daneel keeps for **{{NAME}}**, {{ROLE}}{{AT_COMPANY}},
-leading {{TEAM_OR_PROJECT}}.
+This is the second brain Daneel keeps for **{{NAME}}**, {{ROLE}}{{AT_ORG}}.
 
 > Fill the placeholders (`{{...}}`) once — see `docs/customize.md`. Everything
-> below is generic and applies to any lead's Daneel.
+> below is generic and applies to any Daneel.
 >
 > **Single-folder model:** if a `CLAUDE.local.md` exists next to this file, it
-> holds this instance's real context (name, role, company specifics) and is
+> holds this instance's real context (name, role, domain specifics) and is
 > gitignored. In that case leave the `{{placeholders}}` below as-is — the local
 > file overrides them. See `CONTRIBUTING.md`.
 
@@ -49,9 +48,13 @@ require editing a framework file, stop and flag it. See `CONTRIBUTING.md`.
 
 ## Role context
 
-- **Team:** {{TEAM_DESCRIPTION}} (e.g. ~N engineers)
-- **Manager:** {{MANAGER}}
-- **Main project:** {{MAIN_PROJECT}}
+Fill what applies; delete what doesn't.
+
+- **Referente:** {{REFERENTE}} <!-- whoever you're accountable to: manager,
+  mentor, partner, board, supervising colleague. Omit if nobody. -->
+- **People:** {{PEOPLE_DESCRIPTION}} <!-- e.g. "~5 engineers reporting to me",
+  "a caseload of ~20 patients", "3 collaborators on retainer" -->
+- **Main work:** {{MAIN_WORK}}
 - **Notes:** {{ANY_STANDING_CONTEXT}} <!-- e.g. ramp period, focus of the quarter -->
 
 ## File structure
@@ -66,9 +69,9 @@ require editing a framework file, stop and flag it. See `CONTRIBUTING.md`.
     where it earns its keep — don't force three rigid levels everywhere.
   - A **track** without a clear Epic can live as a loose file in `projects/`;
     promote it into an Epic folder when it grows siblings.
-- `team/<name>.md` — a **dossier per person** (reports, manager, peers,
-  stakeholders). Stable "who they are" + a running log of 1:1s. See conventions
-  below.
+- `team/<name>.md` — a **dossier per person** (reports, referente, peers,
+  clients, stakeholders). Stable "who they are" + a running log of 1:1s. See
+  conventions below.
 - `growth/` — professional growth as a system: `objectives.md`,
   `growth-framework.md`, `evidence.md`, `principles.md` (see below).
 - `reference.md` — durable general knowledge not tied to a project or person
@@ -96,8 +99,8 @@ require editing a framework file, stop and flag it. See `CONTRIBUTING.md`.
   objective/dimension for a performance review.
 - `/braindump` — low-friction capture: a raw thought lands in an inbox, routed
   later.
-- `/status-update` — a status update for your manager/stakeholders, drawn from
-  the Daneel.
+- `/status-update` — a status update for your referente, clients or
+  stakeholders, drawn from the Daneel.
 
 See `docs/skills.md` for details.
 
@@ -158,7 +161,7 @@ When {{NAME}} **shares meeting notes or a catch-up**:
 - Capture context and decisions in the relevant project or team file.
 - Flag anything that seems to lack context or needs follow-up.
 - **Always**, when done processing notes, check whether any items involve people
-  on the team and propose propagating them to their `team/<name>.md` — in a
+  you track and propose propagating them to their `team/<name>.md` — in a
   "Para el próximo 1:1" section if no session exists yet. Do this even if not
   asked: ask "¿propagamos estos ítems a los archivos de equipo?" before closing.
 
@@ -180,7 +183,7 @@ Each `team/<name>.md` is a **dossier**, not a 1:1 log. Structure:
 
 ```
 # <Name> (<ldap>)
-**Role / Stage·Path:** (maps to growth-framework)  ·  **Relationship:** report | manager | peer | expert | stakeholder  ·  **TZ:**  ·  **1:1 cadence:**
+**Role / Stage·Path:** (maps to growth-framework)  ·  **Relationship:** report | manager | referente | peer | expert | stakeholder | client | mentor | collaborator  ·  **TZ:**  ·  **1:1 cadence:**
 
 ## Who they are            <- stable profile: personal + technical + how they work. Matures in place.
 ## Growth trajectory       <- where they're growing, gaps, target. Maps to the growth-framework.
@@ -190,11 +193,13 @@ Each `team/<name>.md` is a **dossier**, not a 1:1 log. Structure:
 
 - **Separate stable from running.** "Who they are" and "Growth trajectory"
   mature in place (edit them). "Bitácora" only ever appends.
-- **Relationship field** — not everyone is a report. Model the type.
+- **Relationship field** — not everyone is a report. Model the type; the list
+  above is open, add values that fit your practice.
 - **Tiered enrichment** — someone mentioned but not yet profiled gets a light
   *stub*. Promote to a full dossier when they reappear.
-- **Cross-layer:** developing a person is a lead's job and produces **your own
-  evidence** — when a report grows, it's a candidate for `growth/evidence.md`.
+- **Cross-layer:** developing the people around you produces **your own
+  evidence** — when someone you've invested in grows, it's a candidate for
+  `growth/evidence.md`.
 
 Use `team/TEMPLATE.md` as the starting point.
 
@@ -206,7 +211,8 @@ Cross-check new notes, decisions, and tasks against `growth/` always:
 
 - `objectives.md` — the year's objectives.
 - `growth-framework.md` — what you're growing toward and what's expected. A
-  formal company framework, or one built from conversation.
+  formal framework (from an employer, a professional body, a certification
+  path), or one built from conversation.
 - `evidence.md` — the **brag document**: a running ledger of concrete
   evidence/impact, each item tagged to an objective or a framework dimension.
   This is what you bring to a performance review. Detection is anchored to the
@@ -226,7 +232,7 @@ quick check before closing:
 1. Did anything go uncaptured?
 2. Is there a decision or learning that should go to `growth/` (a `principle`, or
    a candidate for `evidence`)?
-3. Is anything misaligned with the objectives or with what the manager said?
+3. Is anything misaligned with the objectives or with what your referente said?
 
 If there's something, raise it before closing. If all's well, no need to say
 anything.

@@ -1,36 +1,41 @@
-# Modules — company-specific extensions
+# Modules — domain-specific extensions
 
-A module layers company-specific behavior (calendar rules, ticketing, chat,
-growth framework mapping) on top of the generic Daneel core, without modifying
-it. The core stays portable; the module is swappable.
+The Daneel core deliberately knows nothing about your employer, your tooling, or
+your profession. A **module** is where that knowledge goes: calendar rules,
+ticketing and chat integrations, a formal competency map, a session format
+specific to your practice. It layers on top of the core without modifying it —
+the core stays portable, the module is swappable.
 
-**Modules are not committed to this repo.** Clone your company's module
-separately and place it here as `modules/<company>/`.
+A module might be for a company (its MCP servers, its review framework, its
+tone), or for a kind of practice (a clinician's session structure, a coach's
+client-intake format). Same mechanism either way.
 
-## Available modules
+**Modules are not committed to this repo.** `/modules/*/` is gitignored, so your
+module can live in its own repo — private or public, wherever it belongs — and be
+cloned into place. That's what keeps the framework shareable with people who have
+nothing to do with your context.
 
-- **[r-daneel-meli](https://github.com/mseguel_meli/r-daneel-meli)** — MercadoLibre
-  (Jira/Slack/Calendar MCPs, Fury skills, IT Experience Map, MELI tone)
-
-## How to add a module
+## Adding one
 
 ```bash
-git clone <module-repo> modules/<company>
+git clone <module-repo> modules/<name>
 ```
 
-Then follow the module's own `README.md` to compose it onto your `CLAUDE.md`.
+Then follow the module's own `README.md` to compose it onto your `CLAUDE.md`, and
+record the module you use in your gitignored `CLAUDE.local.md` — not here, so the
+framework stays neutral.
 
-## How to build a module
-
-Copy the structure from any existing module:
+## Building one
 
 ```
-modules/<company>/
-  README.md          # how to enable, what's here, composition principle
-  CLAUDE.<co>.md     # the behavior layer — reference this from your CLAUDE.md
-  reference/         # durable knowledge specific to this company
-  skills/            # repo-local skills (company-specific gestures)
+modules/<name>/
+  README.md            # how to enable, what's here, composition principle
+  CLAUDE.<name>.md     # the behavior layer — reference this from your CLAUDE.md
+  reference/           # durable knowledge specific to this domain
+  skills/              # repo-local skills (domain-specific gestures)
 ```
 
 **Composition principle:** a module only *adds*. If anything conflicts with the
-generic core, the core wins and the module adapts — never the reverse.
+generic core, the core wins and the module adapts — never the reverse. A module
+should never require an edit to a tracked framework file; if it seems to, that's
+a signal the core is missing an extension point.

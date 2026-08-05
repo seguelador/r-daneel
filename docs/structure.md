@@ -36,14 +36,15 @@ Rules:
 ## `team/` — the people CRM
 
 One **dossier** per person (`team/TEMPLATE.md`). Flat folder; model the
-type with the **Relationship** field (report | manager | peer | expert |
-stakeholder) rather than subfolders.
+type with the **Relationship** field (report | manager | referente | peer |
+expert | stakeholder | client | mentor | collaborator) rather than subfolders.
+The list is open — add values that fit your practice.
 
 - **Separate stable from running:** "Who they are" and "Growth trajectory" mature
   in place; "Bitácora" only appends.
 - **Tiered enrichment:** someone merely mentioned gets a light stub; promote to a
   full dossier when they reappear.
-- Each report's stage maps to the `growth-framework`.
+- For people you develop, their stage maps to the `growth-framework`.
 
 ## `growth/` — growth as a system
 
@@ -86,7 +87,7 @@ delete — history stays queryable, out of the way of the live layers.
 
 ## Cross-layer connections worth knowing
 
-- **team ↔ growth/evidence** — developing a person is your own evidence.
+- **team ↔ growth/evidence** — developing someone is your own evidence.
 - **team ↔ tasks** — 1:1 action items flow to `tasks.md`; items from other
   meetings that touch a person flow to their "Para el próximo 1:1".
 - **anything ↔ growth** — decisions/learnings cross-check against `objectives.md`

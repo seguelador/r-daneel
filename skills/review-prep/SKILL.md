@@ -1,12 +1,14 @@
 ---
 name: review-prep
-description: Performance-review prep. Compiles growth/evidence.md into a narrative organized by objective and by growth-framework dimension, ready to bring to a manager. Triggers: /review-prep, "prep my performance review", "build my promo case", "year-end review".
+description: Performance-review prep. Compiles growth/evidence.md into a narrative organized by objective and by growth-framework dimension, ready to bring to your referente or to stand on its own. Triggers: /review-prep, "prep my performance review", "build my promo case", "year-end review", "build my case".
 ---
 
 # /review-prep — Prepare a performance review
 
 You are running `/review-prep`. Goal: turn the running evidence ledger into a
-curated, defensible narrative the user can bring to their manager.
+curated, defensible narrative — to bring to the user's **referente** (manager,
+mentor, review committee), or to stand on its own as their case if there is no
+formal review.
 
 ## Steps
 
@@ -33,9 +35,9 @@ honestly — a thin dimension is something to address before the review, not to
 hide.
 
 ### 4. Deliver
-Present it as a clean document the user can copy into their company's review
-tool. Offer to save a snapshot under `growth/` (e.g. `growth/review-<period>.md`)
-so the compiled narrative is preserved.
+Present it as a clean document the user can copy into whatever review tool or
+format they use. Offer to save a snapshot under `growth/` (e.g.
+`growth/review-<period>.md`) so the compiled narrative is preserved.
 
 ## Notes
 - If evidence is sparse, say so plainly and suggest a going-forward capture

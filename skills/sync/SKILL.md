@@ -42,7 +42,8 @@ For each, decide a destination using the structure above. Rules:
   Epic or track doesn't exist yet, propose creating it** (with its `_overview.md`
   if it's a new Epic).
 - Involves a person (feedback, 1:1 topic) → their `team/<name>.md`.
-- A leadership learning → `growth/principles.md`. Concrete impact/evidence tied
+- A learning about judgment or practice → `growth/principles.md`. Concrete
+  impact/evidence tied
   to an objective or framework dimension → **propose** a `growth/evidence.md`
   entry (low bar to suggest, high bar to file — never file silently).
 - A durable cross-session fact → memory.
@@ -64,9 +65,11 @@ Apply the confirmed changes. Close with a 2–3 line summary: what was propagate
 and where. If something had no clear destination, leave it explicit as pending.
 
 ## Mandatory cross-check
-Before finishing, cross-check against `growth/objectives.md` and the manager's
-latest `team/` session: if something new is misaligned or connects to the
-objectives, mention it — unprompted.
+Before finishing, cross-check against `growth/objectives.md` and the latest
+`team/` session with your **referente** — whoever you're accountable to (manager,
+mentor, partner, board). If something new is misaligned or connects to the
+objectives, mention it — unprompted. If there is no referente, cross-check
+against the objectives alone.
 
 ## Tone
 Direct, orderly. Propose destinations, don't dump. The goal is a tidy Daneel

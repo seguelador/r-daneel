@@ -1,6 +1,8 @@
 # Personal objectives — <year>
 
-> The objectives you set with your manager and are evaluated against.
+> The objectives you're working toward — set with your referente (manager,
+> mentor, partner) and evaluated against, or set for yourself if nobody else
+> does it for you.
 
 ---
 

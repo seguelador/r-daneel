@@ -40,14 +40,17 @@ Replace every `{{PLACEHOLDER}}`:
 | Placeholder | What it is |
 |-------------|-----------|
 | `{{NAME}}` | Your name |
-| `{{ROLE}}` | Your role (e.g. Technical Leader, EM) |
-| `{{AT_COMPANY}}` | " at <Company>" or empty |
-| `{{TEAM_OR_PROJECT}}` | What you lead |
-| `{{TEAM_DESCRIPTION}}` | e.g. "~5 engineers" |
-| `{{MANAGER}}` | Your manager's name |
-| `{{MAIN_PROJECT}}` | Your main project |
+| `{{ROLE}}` | Your role (e.g. Technical Leader, EM, therapist, consultant) |
+| `{{AT_ORG}}` | " at &lt;Organization&gt;", " (independent)", or empty |
+| `{{REFERENTE}}` | Whoever you're accountable to — manager, mentor, partner, board. Leave empty if nobody. |
+| `{{PEOPLE_DESCRIPTION}}` | e.g. "~5 engineers reporting to me", "a caseload of ~20", "3 retainer clients" |
+| `{{MAIN_WORK}}` | Your main project or focus |
 | `{{ANY_STANDING_CONTEXT}}` | Ramp period, quarter focus, etc. |
 | `{{CLAUDE_MEMORY_DIR}}` | Your Claude Code memory dir (see below) |
+
+Delete any row that doesn't apply to you rather than filling it with filler —
+Daneel reads an empty `{{REFERENTE}}` as "no formal referente" and adapts the
+cross-checks accordingly.
 
 **Memory dir:** Claude Code keeps per-project memory under
 `~/.claude/projects/<slug>/memory/`. Point `{{CLAUDE_MEMORY_DIR}}` at yours, or
@@ -59,10 +62,11 @@ someone else's.
 This is what makes evidence detection work — do it first.
 
 - **`growth-framework.md`** — the anchor. Two options:
-  - You have a **formal** framework (a role/competency map from your company)?
-    Summarize its dimensions and expectations, and map yourself + your team to it.
+  - You have a **formal** framework (a role/competency map from an employer, a
+    professional body, a certification or licensing path)? Summarize its
+    dimensions and expectations, and map yourself + the people you develop to it.
   - You don't? **Build one from conversation.** Open a session and tell Daneel
-    what you're aiming for professionally and toward which role; have it draft the
+    what you're aiming for professionally and toward what; have it draft the
     framework, then refine.
 - **`objectives.md`** — your year's objectives.
 - Leave `evidence.md` and `principles.md` as empty ledgers — they fill as you
@@ -70,9 +74,9 @@ This is what makes evidence detection work — do it first.
 
 ## 4. Seed `team/`
 
-Create a dossier per person you work with closely (start with your reports and
-your manager) from `team/TEMPLATE.md`. Don't over-invest — stubs are fine;
-they'll mature.
+Create a dossier per person you work with closely — start with whoever recurs
+most (reports, your referente, key clients or collaborators) — from
+`team/TEMPLATE.md`. Don't over-invest — stubs are fine; they'll mature.
 
 ## 5. First session
 
@@ -80,8 +84,16 @@ Open Claude Code in your Daneel folder and just talk. Drop some meeting notes,
 ask "what's open?", or run `/catchup` at the end of a day. Daneel will propose
 where things go — you confirm.
 
-## At MELI?
+## 6. Optional: add a module
 
-Enable `modules/meli/` — see `modules/meli/README.md`. It layers company-specific
-behavior (calendar rules, Jira/Slack, tone) on top of the generic core without
-touching it.
+If your context has its own tooling or vocabulary — a ticketing system, a
+corporate calendar, a formal competency map, a session format specific to your
+practice — that belongs in a **module**, not in the core:
+
+```bash
+git clone <module-repo> modules/<name>
+```
+
+Then follow the module's own README to compose it onto your `CLAUDE.md`. Modules
+are gitignored here, so they never leak into the framework. See
+`modules/README.md` for the pattern and how to build your own.
