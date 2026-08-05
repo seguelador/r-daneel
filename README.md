@@ -1,11 +1,11 @@
-# Daneel — the second brain for a Technical Leader
+# Daneel — second brain for individual contributors and leads
 
 > A second brain operated by Claude Code. It captures what happens in your week —
 > 1:1s, decisions, projects, learnings — routes it to the right place, and
 > gives it back when you need it: preparing a 1:1, writing a status update, or
 > building your case for a performance review.
 
-Daneel is a **plain-Markdown Daneel plus a set of Claude Code skills**. Your
+Daneel is a **plain-Markdown second brain plus a set of Claude Code skills**. Your
 notes stay yours — readable, portable, versionable. Claude reads the folder,
 understands the structure, and writes back into it following the conventions
 below.
@@ -13,34 +13,42 @@ below.
 ## Why this one
 
 There is a thriving community of "AI second brain" setups (see Credits). Almost
-all of them target founders and individual contributors. **Daneel is built for a
-lead at a large company**: recurring 1:1s, a people CRM, a growth/role
-framework, ceremony prep, and integration with a corporate tool stack. If your
-week is made of *people and decisions* more than *tickets and code*, this is for
-you.
+all of them target founders and solo contributors. **Daneel is built for someone
+whose week is made of *people and decisions***: recurring 1:1s, a people CRM, a
+growth/role framework, ceremony prep, and integration with a corporate tool
+stack. It works for individual contributors tracking their own growth as well as
+leads managing a team.
 
 ## What's in the box
 
 ```
-CLAUDE.md          # how Daneel behaves — the operating contract
-docs/              # philosophy, structure conventions, skills, how to customize
-.claude/skills/    # the gestures: sync, catchup, weekly, notas, prep, review-prep, braindump, status-update
-templates/         # empty scaffolds you copy into your own Daneel
-modules/meli/      # optional MercadoLibre integration (calendar, Jira, Slack). Delete if not at MELI.
+CLAUDE.md            # how Daneel behaves — the operating contract
+docs/                # philosophy, structure conventions, skills, how to customize
+skills/              # the gestures: sync, catchup, weekly, notas, prep, review-prep, braindump, status-update, audit
+.claude-plugin/      # Claude Code plugin manifest
+templates/           # empty scaffolds you copy into your own Daneel
+modules/             # optional company-specific integrations (calendar, ticketing, chat)
+install.sh           # registers Daneel as a Claude Code plugin
 ```
 
 ## Quickstart
 
-1. **Copy the scaffold.** Create your own private Daneel folder (keep it
-   separate from this framework repo) and copy in `CLAUDE.md`, `.claude/`, and
-   the contents of `templates/`.
-2. **Make it yours.** Open `docs/customize.md` and fill the placeholders in
+1. **Clone the repo** into a folder that will be both the framework and your
+   live Daneel (single-folder model — see `CONTRIBUTING.md`).
+2. **Register the plugin.**
+   ```bash
+   bash install.sh
+   ```
+   This creates a symlink at `~/.claude/skills/daneel` so Claude Code
+   auto-loads the skills on the next session.
+3. **Make it yours.** Open `docs/customize.md` and fill the placeholders in
    `CLAUDE.md` (your role, manager, team, current project) and the `growth/`
-   files. This is manual for now — an onboarding wizard is on the roadmap.
-3. **First session.** Open Claude Code in your Daneel folder and just talk:
+   files. Or create a `CLAUDE.local.md` for private context (gitignored).
+4. **First session.** Restart Claude Code, open the folder, and just talk:
    drop meeting notes, ask what's open, or run a skill (`/notas`, `/sync`,
    `/catchup`).
-4. **At MELI?** Enable `modules/meli/` — see its README.
+5. **Company integrations?** See `modules/` — optional integrations for
+   calendar, ticketing, and chat tools.
 
 ## The layers (30-second tour)
 
