@@ -1,0 +1,29 @@
+# CLAUDE.local.md — instance context (your name)
+
+> Private context for this Daneel instance. Gitignored — never committed.
+> Complements the generic CLAUDE.md (leave its {{placeholders}} as-is;
+> this file overrides them in practice).
+
+## Who / role
+
+<Your name> (<ldap or handle>), <Role> at <Organization>.
+
+- **Referente:** <Name> — <their role>. File: `team/<name>.md`
+- **People:** <e.g. "~5 engineers reporting to me", or "no direct reports">
+- **Main work:** <main project or focus>
+- **Notes:** <ramp period, quarter focus, anything standing — or delete this line>
+
+## Language and tone
+
+<Your language: Spanish, Portuguese, English, etc.>
+Direct, practical — treat me as a peer, not a student.
+
+## Personal defaults
+
+- **Timezone:** <e.g. America/Santiago, America/Sao_Paulo, Europe/Madrid> *(optional — used for calendar integrations)*
+- **Default meeting duration:** <e.g. 45 min> *(optional)*
+
+## Module (optional)
+
+<!-- If you're using a company or team module, reference it here.
+     Example: "For <company>-specific behavior, follow modules/<name>/CLAUDE.<name>.md" -->

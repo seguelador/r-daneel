@@ -23,10 +23,10 @@ is not a conversational debrief — it's routing and orderly persistence.
   brag doc — concrete impact/evidence), `principles.md` (learnings).
 - **`prep/`** — if this session produced meeting prep, its durable residue is
   routed to the track/team file; the prep artifact itself can be archived.
-- **Memory** (`{{CLAUDE_MEMORY_DIR}}/`) — durable cross-session facts: contacts,
-  resources/URLs, working preferences. Update `MEMORY.md` with the pointer.
-  (The memory dir is per-machine; don't hardcode a path — use the one this
-  session actually has.)
+- **Memory** (Claude Code memory dir for this project) — durable cross-session
+  facts: contacts, resources/URLs, working preferences. Update `MEMORY.md` with
+  the pointer. Use the memory dir this session actually has — never hardcode a
+  path from another machine or user.
 
 ## Steps
 

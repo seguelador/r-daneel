@@ -28,4 +28,10 @@ fi
 
 ln -s "${REPO_DIR}" "${LINK_PATH}"
 echo "✓ Plugin registered: ${LINK_PATH} → ${REPO_DIR}"
-echo "  Restart Claude Code to load the daneel skills."
+echo ""
+echo "  Next steps:"
+echo "  1. cp templates/CLAUDE.local.md.example CLAUDE.local.md"
+echo "  2. Fill in your name, role, and referente (timezone optional)"
+echo "  3. Restart Claude Code, open this folder, and run /catchup"
+echo ""
+echo "  Full setup guide: docs/customize.md"
