@@ -137,6 +137,12 @@ standing contract holds across all of them.
    - action items that should propagate to a `team/<name>.md`
    - drift in `tasks.md` (done items lingering, priorities stale)
    - stale content or a useful cross-link
+   - a candidate for shared team knowledge ("Para el equipo" buffer in
+     `reference.md`) — **only if team context exists**: a team module referenced
+     in `CLAUDE.local.md`, or people with `report` relationship in `team/`.
+     Signals: non-trivial problem solved, undocumented system behavior
+     discovered, architectural decision others will encounter. If no team
+     context, never raise this.
    Bar to interrupt is **high**. If nothing is relevant, say nothing.
 4. **Respect closing signals.** See below.
 

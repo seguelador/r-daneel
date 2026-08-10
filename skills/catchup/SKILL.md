@@ -34,6 +34,10 @@ preview and confirm before writing:
 - New/closed tasks → `tasks.md`.
 - A learning → `growth/principles.md`; concrete impact → propose
   `growth/evidence.md`.
+- Team-shareable knowledge (non-trivial problem solved, undocumented behavior
+  found, architectural decision others will encounter) → **only if team context
+  exists** (team module in `CLAUDE.local.md` or reports in `team/`): propose
+  adding to `reference.md` under `## Para el equipo`.
 
 Always show what you'll write before writing. Short — bullets, not paragraphs.
 

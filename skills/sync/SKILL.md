@@ -49,6 +49,11 @@ For each, decide a destination using the structure above. Rules:
 - A durable cross-session fact → memory.
 - Doesn't fit any Epic → propose a loose track in `projects/` or a new Epic.
   **Ask when unsure which Epic it belongs to.**
+- Team-shareable knowledge (non-trivial problem solved, undocumented system
+  behavior discovered, architectural decision others will encounter) →
+  **only if team context exists** (team module in `CLAUDE.local.md` or reports
+  in `team/`): propose adding a `- [ ]` item to `reference.md` under
+  `## Para el equipo`. Never create this section silently — always confirm.
 
 ### 3. Show the plan before writing
 Present a preview grouped by file — bullets, not paragraphs:
