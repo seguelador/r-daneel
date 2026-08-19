@@ -3,6 +3,7 @@
 
 # Personal instance context (single-folder model — never committed to the framework)
 CLAUDE.local.md
+AGENTS.local.md
 
 # OS noise
 .DS_Store
