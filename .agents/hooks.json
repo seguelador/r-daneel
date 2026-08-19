@@ -1,0 +1,7 @@
+{
+  "SessionStart": [
+    {
+      "command": "bash .claude/hooks/check-updates.sh"
+    }
+  ]
+}
