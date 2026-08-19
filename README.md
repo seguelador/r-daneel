@@ -1,14 +1,14 @@
 # Daneel — a second brain
 
-> A second brain operated by Claude Code. It captures what happens in your week —
-> conversations, decisions, projects, learnings — routes it to the right place,
-> and gives it back when you need it: preparing a 1:1, writing a status update,
-> or building the case for your own progression.
+> A second brain for AI coding assistants (Claude Code and Codex CLI). It captures
+> what happens in your week — conversations, decisions, projects, learnings —
+> routes it to the right place, and gives it back when you need it: preparing a
+> 1:1, writing a status update, or building the case for your own progression.
 
-Daneel is a **plain-Markdown second brain plus a set of Claude Code skills**. Your
-notes stay yours — readable, portable, versionable. Claude reads the folder,
-understands the structure, and writes back into it following the conventions
-below.
+Daneel is a **plain-Markdown second brain plus a set of skills** that work with
+Claude Code and Codex CLI. Your notes stay yours — readable, portable,
+versionable. The AI reads the folder, understands the structure, and writes back
+into it following the conventions below.
 
 ## Why this one
 
@@ -27,13 +27,16 @@ knows nothing about it.
 ## What's in the box
 
 ```
-CLAUDE.md            # how Daneel behaves — the operating contract
+AGENTS.md            # how Daneel behaves — the operating contract (canonical)
+CLAUDE.md            # one-line pointer to AGENTS.md (for Claude Code cascade)
 docs/                # philosophy, structure conventions, skills, how to customize
 skills/              # the gestures: sync, catchup, weekly, notas, prep, review-prep, braindump, status-update, audit
+.claude/             # Claude Code config (hooks, settings)
+.agents/             # Codex CLI config (hooks.json)
 .claude-plugin/      # Claude Code plugin manifest
 templates/           # empty scaffolds you copy into your own Daneel
 modules/             # optional domain-specific extensions (calendar, ticketing, chat)
-install.sh           # registers Daneel as a Claude Code plugin
+install.sh           # registers Daneel as a plugin for Claude Code and Codex CLI
 ```
 
 ## Quickstart
@@ -44,13 +47,13 @@ install.sh           # registers Daneel as a Claude Code plugin
    ```bash
    bash install.sh
    ```
-   This creates a symlink at `~/.claude/skills/daneel` so Claude Code
-   auto-loads the skills on the next session.
+   Creates `~/.claude/skills/daneel` (Claude Code) and `~/.agents/skills/daneel`
+   (Codex CLI) so both tools auto-load the skills on the next session.
 3. **Make it yours.** Open `docs/customize.md` and fill the placeholders in
-   `CLAUDE.md` (your role, who you're accountable to, the people you work with,
-   current work) and the `growth/` files. Or create a `CLAUDE.local.md` for
-   private context (gitignored).
-4. **First session.** Restart Claude Code, open the folder, and just talk:
+   `AGENTS.md` (your role, who you're accountable to, the people you work with,
+   current work) and the `growth/` files. Or create an `AGENTS.local.md` /
+   `CLAUDE.local.md` for private context (both gitignored).
+4. **First session.** Open the folder in Claude Code or Codex, and just talk:
    drop meeting notes, ask what's open, or run a skill (`/notas`, `/sync`,
    `/catchup`).
 5. **Need tool integrations?** See `modules/` — optional extensions for

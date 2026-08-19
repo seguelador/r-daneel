@@ -19,15 +19,17 @@ Either way, the rule below holds.
 
 | Framework — **tracked, shared** (change via branch/PR) | Instance — **gitignored, private** (edit freely) |
 |---|---|
-| `CLAUDE.md` | `CLAUDE.local.md` |
-| `.claude/skills/*` | `tasks.md` |
+| `AGENTS.md`, `CLAUDE.md` | `AGENTS.local.md`, `CLAUDE.local.md` |
+| `skills/*`, `.claude/skills/*` | `tasks.md` |
+| `.agents/hooks.json`, `.claude/settings.json` | `.claude/settings.local.json` |
 | `docs/*` | `projects/`, `team/`, `growth/` |
 | `templates/*` | `prep/`, `archive/` |
-| `modules/*` | `.claude/settings.local.json` |
+| `modules/*` | |
 | `README.md`, `CONTRIBUTING.md`, `LICENSE`, `.gitignore` | |
 
-The `.gitignore` enforces this: your private content and `CLAUDE.local.md` are
-never seen by git, so they can never be committed to the framework.
+The `.gitignore` enforces this: your private content, `CLAUDE.local.md`, and
+`AGENTS.local.md` are never seen by git, so they can never be committed to the
+framework.
 
 ## Guardrails (for you and for Daneel)
 
@@ -35,11 +37,11 @@ never seen by git, so they can never be committed to the framework.
    a meeting, prepping a 1:1, routing context — all of that touches
    `team/`, `projects/`, `growth/`, `tasks.md`, etc. Never framework files.
 2. **Changing a framework file is a deliberate act.** Improving a skill, a doc, a
-   template, the generic `CLAUDE.md`, or a module is a *framework change* — do it
-   on a branch (see below), not as a side effect of daily use.
+   template, `AGENTS.md`, or a module is a *framework change* — do it on a
+   branch (see below), not as a side effect of daily use.
 3. **If a Daneel action seems to need a framework edit, stop and flag it.** It's
-   usually a sign the change belongs in `CLAUDE.local.md` (personal) or is
-   actually a framework improvement to do deliberately.
+   usually a sign the change belongs in `AGENTS.local.md` / `CLAUDE.local.md`
+   (personal) or is actually a framework improvement to do deliberately.
 4. **Never `git add -f` your private content.** If `git status` ever shows
    `team/`, `growth/`, etc., the `.gitignore` is broken — fix it before committing.
 
@@ -64,7 +66,7 @@ For any framework improvement:
 
 In the single-folder model, framework updates are just commits on your main
 branch — nothing to sync. In the two-folder model, pull the changed framework
-files (skills/docs/templates/`CLAUDE.md`) into your instance by hand, the way the
+files (skills/docs/templates/`AGENTS.md`) into your instance by hand, the way the
 original migration was done in slices.
 
 ## Roadmap (deferred, by design)
