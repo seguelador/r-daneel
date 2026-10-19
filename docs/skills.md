@@ -18,6 +18,17 @@ trigger. Everything else is just behavior described in `CLAUDE.md`.
 
 Lookup/recall is a **behavior** (brain-first), not a skill — just ask.
 
+## Meeting capture: `/notas`
+
+Use `/notas` for any meeting: project discussions, team syncs, planning,
+reviews, workshops, and 1:1s. Capture stays quiet; on completion, it organizes
+context, decisions, actions by owner, and open questions without inventing facts.
+The subject determines the destination: project minutes go to a track, a
+person-focused 1:1 goes to their dossier, and a meeting with no clear durable
+home can stay temporarily in `prep/` for later routing. The record and destination
+are previewed before saving. Unlike `/braindump`, this produces a meeting record
+rather than an inbox of unrelated thoughts.
+
 ## The sync ↔ catchup boundary (important)
 
 These two are easy to confuse. They are different:
